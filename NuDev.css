@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #05386b;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-list {
+    float: left;
+    list-style: none;
+    padding: 25px;
+}
+
+.header-list a {
+    color: #5cdb95;
+}
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    /*background-image: url(https://lh3.googleusercontent.com/UAhAyRMKaALkl1BEgcpgRs17mQFeNpD4a2waJ-UfVGCJhgSvCA8lqfynT4_P9stkrUDeJUUzJvL7Pl2xn9vlNVJMZQqkwC0CYTGzdbXI-h7KpPfSGCbdNLUiRk6GORN5FLIbSzD7IzieyiWCYiV7kGLiwAwnfhY8yZICBkSLRZKzqZPEGDaoRWf_7jIS7Lbq4PwmuVL8__xu11KahQU774ogKL5rt4II748MCr2wKPsQ7DDhbZYiM_Tff_KCSl6XNPWy5-_taGH-box6-ajTWM4e9Dv3B5lQ2DkOiYAd140PdPN_Xwa6Ga8pYjXGXhXSE4LByIALGE9Y3VseW_uFskF2gghXSdh1z4zE_QnTmKOGTJnz6I41Wr4L5vl7An5mROUoCByvXckoHrCytb1u9r-lJ9NdPL31YcgPK78HCL3786A8WQT6vwuAsZQ9hnGNvNig0tXBYMkLDtfAxXDhIu8eLGC_08Vi6Vl-0r0eGbBDsnM7qZrG6VF3mbUf3_8TOPAJhNlRMBHHwsueoKyTpucQTERig5kqjPC2sroEYAIUviRGhMmvbPv_3qgwQfV_CNJGybx8xi9YUPROQq67JVw6Z9uOqsSX_Vo5rYtHGQfHrzGA2h_YLZCmmUCGuRqDqSXsZ--fddroiHlRMT8XN-5j-r5xgiGDKG3gI7cdwOj6yWi9iU60pyYioMPDBwy-gy99FIkeNwHRtruV_UHX8bA=w901-h601-no?authuser=0);*/
+    background-image: url("Bg Main.png");
+    background-size: cover;
+}
+
+.heading h1 {
+    color: #d1ccc0;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.heading p {
+    color: #d1ccc0;
+    margin-bottom: 5px;
+}
+
+.heading h2 {
+    color: #d1ccc0;
+    margin-bottom: 20px;
+}
+
+.main-body{
+	padding-top: 30px;
+}
+
+.content-judul{
+	font-family: poppins, montserrat, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 35px;
+	text-align: center;
+	letter-spacing: 2PX;
+	color: #379683;
+}
+
+.contents{
+	display: flex;
+
+}
+
+.content{
+	
+	width: calc(100%/4);
+	display: auto;
+	padding: 40px;
+}
+
+.photo img{
+	width: 100%;
+	opacity: 0.9;
+	border-radius: 8PX;
+
+}
+
+.photo img:hover{
+	opacity: 1;
+}
+
+.photo{
+	color: rgba(255,255,255,0.7);
+	position: relative;
+}
+
+.photo:hover{
+	color: rgba(255,255,255,1);
+}
+
+.photo h3, .ig{
+	position: absolute;
+}
+
+.ig{
+	width: 15%;
+	top:  5%;
+	right: 7%;
+	float: right;
+	opacity: 0.8;
+	border-radius: 5px;
+}
+
+.ig:hover{
+	opacity: 1;
+
+}
+
+.photo h3{
+	font-family: montserrat, poppins, sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	bottom: 7%;
+	left: 7%;
+
+}
+
+.content p{
+	font-family: montserrat, sans-serif;
+	color: #379683;
+	font-size: 16px;
+	text-align: justify;
+	padding-top: 35px;
+	text-indent: 50px;
+	line-height: 1.5;
+
+}
+
+.contents{
+	justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+.footer{
+    background-color: #05386B;
+    color:#5CDB95;
+    height: 120px;
+    padding:40px;
+}
+
+.footer-logo{
+    float: left;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.footer-list{
+    float: right;
+}
+
+.footer-list li{
+    padding-bottom: 10px;
+}
