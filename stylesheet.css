@@ -75,6 +75,10 @@ header {
     height: 40px;
 }
 
+.header-right a:hover{
+	color: white;
+}
+
 .header-logo{
 	line-height: 40px;
     float: left;
@@ -98,6 +102,7 @@ header {
 
 .header-list a {
     color: #5cdb95;
+    transition: all 0.3s;
 }
 
 .top-wrapper {
@@ -261,4 +266,9 @@ li {
 
 .footer a {
 	color:#5CDB95;
+}
+
+.footer a:hover{
+	color: white;
+	transition: all 0.3s;
 }
