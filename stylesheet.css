@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-  }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +15,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: montserrat;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -53,32 +49,51 @@ a {
 
 .container {
     width: 80%;
-    padding: 0 15px;
     margin: 0 auto;
-    text-align: center;
 }
 
 header {
     background-color: #05386b;
+    color:#5CDB95;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
+    padding: 15px 0px;
 }
 
 .header-left {
+	font-family: montserrat;
     float: left;
+    height: 40px;
 }
 
 .header-right {
+	font-family: montserrat;
     float: right;
+    height: 40px;
+}
+
+.header-logo{
+	line-height: 40px;
+    float: left;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.header-right ul {
+	line-height: 40px;
 }
 
 .header-list {
     float: left;
     list-style: none;
-    padding: 25px;
+}
+
+.right-margin {
+	margin-right: 50px;
 }
 
 .header-list a {
@@ -87,25 +102,33 @@ header {
 
 .top-wrapper {
     padding: 180px 0 100px 0;
-    /*background-image: url(https://lh3.googleusercontent.com/UAhAyRMKaALkl1BEgcpgRs17mQFeNpD4a2waJ-UfVGCJhgSvCA8lqfynT4_P9stkrUDeJUUzJvL7Pl2xn9vlNVJMZQqkwC0CYTGzdbXI-h7KpPfSGCbdNLUiRk6GORN5FLIbSzD7IzieyiWCYiV7kGLiwAwnfhY8yZICBkSLRZKzqZPEGDaoRWf_7jIS7Lbq4PwmuVL8__xu11KahQU774ogKL5rt4II748MCr2wKPsQ7DDhbZYiM_Tff_KCSl6XNPWy5-_taGH-box6-ajTWM4e9Dv3B5lQ2DkOiYAd140PdPN_Xwa6Ga8pYjXGXhXSE4LByIALGE9Y3VseW_uFskF2gghXSdh1z4zE_QnTmKOGTJnz6I41Wr4L5vl7An5mROUoCByvXckoHrCytb1u9r-lJ9NdPL31YcgPK78HCL3786A8WQT6vwuAsZQ9hnGNvNig0tXBYMkLDtfAxXDhIu8eLGC_08Vi6Vl-0r0eGbBDsnM7qZrG6VF3mbUf3_8TOPAJhNlRMBHHwsueoKyTpucQTERig5kqjPC2sroEYAIUviRGhMmvbPv_3qgwQfV_CNJGybx8xi9YUPROQq67JVw6Z9uOqsSX_Vo5rYtHGQfHrzGA2h_YLZCmmUCGuRqDqSXsZ--fddroiHlRMT8XN-5j-r5xgiGDKG3gI7cdwOj6yWi9iU60pyYioMPDBwy-gy99FIkeNwHRtruV_UHX8bA=w901-h601-no?authuser=0);*/
     background-image: url("Bg Main.png");
     background-size: cover;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+.heading {
+	text-align: center;
 }
 
 .heading h1 {
     color: #d1ccc0;
-    font-size: 50px;
-    margin-bottom: 5px;
-}
-
-.heading p {
-    color: #d1ccc0;
+    font-size: 80px;
     margin-bottom: 5px;
 }
 
 .heading h2 {
     color: #d1ccc0;
+    font-size: 25px;
     margin-bottom: 20px;
+}
+
+.heading p {
+    color: #d1ccc0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;;
 }
 
 .main-body{
@@ -115,29 +138,38 @@ header {
 .content-judul{
 	font-family: poppins, montserrat, sans-serif;
 	font-weight: bold;
-	font-style: italic;
 	font-size: 35px;
 	text-align: center;
-	letter-spacing: 2PX;
+	letter-spacing: 2px;
 	color: #379683;
 }
 
 .contents{
-	display: flex;
+	justify-content: center;
+	/*border: solid 1px black;*/
+	text-align: center;
 
 }
 
 .content{
-	
-	width: calc(100%/4);
-	display: auto;
+	vertical-align: top;
+	width: 260px;
+	display: inline-block;
 	padding: 40px;
+	/*border: solid 1px black;*/
+	box-sizing: border-box;
+	
+}
+
+.contents-2 {
+	display: none;
 }
 
 .photo img{
+	transition: all 0.5s;
 	width: 100%;
 	opacity: 0.9;
-	border-radius: 8PX;
+	border-radius: 8px;
 
 }
 
@@ -174,7 +206,7 @@ header {
 
 .photo h3{
 	font-family: montserrat, poppins, sans-serif;
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: bold;
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);
@@ -186,16 +218,24 @@ header {
 .content p{
 	font-family: montserrat, sans-serif;
 	color: #379683;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: justify;
 	padding-top: 35px;
-	text-indent: 50px;
+	text-indent: 20px;
 	line-height: 1.5;
-
+	word-spacing: 1px;
 }
 
-.contents{
-	justify-content: center;
+.content-2 p{
+	font-family: montserrat, sans-serif;
+	color: #379683;
+	font-size: 14px;
+	text-align: justify;
+	padding-top: 35px;
+	text-indent: 20px;
+	line-height: 1.5;
+	word-spacing: 1px;
+
 }
 
 li {
@@ -205,21 +245,20 @@ li {
 .footer{
     background-color: #05386B;
     color:#5CDB95;
-    height: 120px;
-    padding:40px;
+    height: 80px;
+    padding: 40px 0px;
 }
 
-.footer-logo{
+.footer-right{
+	font-family: montserrat;
     float: left;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: bold;
 }
 
-.footer-list{
-    float: right;
+.footer-right li{
+	text-align: left;
+    padding-bottom: 20px;
 }
 
-.footer-list li{
-    padding-bottom: 10px;
+.footer a {
+	color:#5CDB95;
 }
