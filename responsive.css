@@ -26,30 +26,22 @@
 	}
 	
 	.center-block-left {
-		display: inline-block;
 		text-align: center;
 		border-top: solid 1px #5CDB95;
 		/*border: solid 1px black;*/
 	}
 	
-	.footer-left {
-		float: none;
+	.footer {
 		text-align: center;
-		padding-bottom: 10px;
-		/*border: solid 1px black;*/
 	}
+	
 	.footer-right {
 		float: none;
-		text-align: center;
+		display: inline-block;
 	}
-	.footer-right ul {
-		line-height: 40px;
-	}
+	
 	.footer-right li {
-		float: left;
-	} 
-	.right-margin-footer {
-		margin-right: 50px;
+		text-align: center;
 	}
 	
 	.contents {
