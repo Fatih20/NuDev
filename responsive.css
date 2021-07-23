@@ -5,29 +5,50 @@
 }
 
 @media (max-width: 670px){
+	header {
+		height: 120px;
+	}
+	
 	.header-left {
-		float: none;
-		text-align: center;
+		height: 120px;
+		float: left;
+		text-align: left;
 		/*border: solid 1px black;*/
 	}
+	
 	.header-right {
 		padding-top: 10px;
-		float: none;
-		text-align: center;
+		float: right;
+		text-align: right;
 		/*border: solid 1px black;*/
 	}
+	
+	.header-list {
+		float: none;
+		text-align: right;
+	}
+	
+	
 	.header-logo {
 		text-align: center;
+	}
+	
+	.top-wrapper {
+		padding: 240px 0px 100px 0px;
+	}
+	
+	.right-margin {
+		margin-right: 0px;
 	}
 	.center-block-right {
 		display: inline-block;
 		text-align: center;
+		/*border-bottom: solid 1px #5CDB95;*/
 		/*border: solid 1px black;*/
 	}
 	
 	.center-block-left {
 		text-align: center;
-		border-top: solid 1px #5CDB95;
 		/*border: solid 1px black;*/
 	}
 	
